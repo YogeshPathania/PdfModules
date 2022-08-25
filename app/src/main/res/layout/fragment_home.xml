@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="113dp"
+        android:layout_height="125dp"
+        android:background="@drawable/h_rectangle_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="113dp"
+        android:layout_height="125dp"
+        android:background="@drawable/h_rectangle_2"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
+
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="113dp"
+        android:layout_height="125dp"
+        android:background="@drawable/h_rectangle_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintVertical_bias="0.42000002" />
+
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="113dp"
+        android:layout_height="125dp"
+        android:background="@drawable/h_rectangle_5"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_2"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_4" />
+
+    <View
+        android:id="@+id/ellipse_1"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/h_ellipse_1"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/ellipse_2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/h_ellipse_2"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_2"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/ellipse_3"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/h_ellipse_3"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_4"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_4"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/ellipse_4"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/h_ellipse_4"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_5"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/pdffkdm_1"
+        android:layout_width="25dp"
+        android:layout_height="29.65dp"
+        android:background="@drawable/h_pdffkdm_1"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_2"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_2"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_2"
+        app:layout_constraintTop_toTopOf="@+id/ellipse_2" />
+
+    <View
+        android:id="@+id/doc1_1"
+        android:layout_width="30dp"
+        android:layout_height="32.47dp"
+        android:background="@drawable/h_doc1_1"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_3"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_3"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_3"
+        app:layout_constraintTop_toTopOf="@+id/ellipse_3" />
+
+    <View
+        android:id="@+id/download_6_"
+        android:layout_width="30dp"
+        android:layout_height="28.89dp"
+        android:background="@drawable/h_download"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_4"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_4"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_4"
+        app:layout_constraintTop_toTopOf="@+id/ellipse_4" />
+
+
+    <View
+        android:id="@+id/convert_dar"
+        android:layout_width="35dp"
+        android:layout_height="36.03dp"
+        android:background="@drawable/h_convert_dark_1"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_1"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse_1"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_1"
+        app:layout_constraintTop_toTopOf="@+id/ellipse_1" />
+
+    <TextView
+        android:id="@+id/convert_to_"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|top"
+        android:text="@string/convert_to_"
+        android:textAppearance="@style/convert_to_"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_1" />
+
+    <TextView
+        android:id="@+id/open_pdf_fi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/open_pdf_fi"
+        android:textAppearance="@style/open_pdf_fi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_2"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_2"
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_2" />
+
+    <TextView
+        android:id="@+id/open_doc_fi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/open_doc_fi"
+        android:textAppearance="@style/open_doc_fi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_4"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_4"
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_3" />
+
+    <TextView
+        android:id="@+id/open_epub_f"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/open_epub_f"
+        android:textAppearance="@style/open_epub_f"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_5"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

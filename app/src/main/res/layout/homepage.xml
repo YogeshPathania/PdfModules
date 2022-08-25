@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage"
+    android:id="@+id/drawerLayout"
+    android:background="@drawable/background_decent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_drawer"
+        android:layout_gravity="start"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-6dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <View
+                android:id="@+id/rectangle_1"
+                android:layout_width="113dp"
+                android:layout_height="125dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="281dp"
+                android:layout_marginBottom="272dp"
+                android:background="@drawable/h_rectangle_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/pdffkdm_1"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/rectangle_2"
+                android:layout_width="113dp"
+                android:layout_height="125dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="239dp"
+                android:layout_marginTop="278dp"
+                android:background="@drawable/h_rectangle_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.418"
+                app:layout_constraintStart_toEndOf="@+id/rectangle_1"
+                app:layout_constraintTop_toBottomOf="@+id/access_1"
+                tools:ignore="MissingConstraints" />
+
+
+            <View
+                android:id="@+id/rectangle_4"
+                android:layout_width="113dp"
+                android:layout_height="125dp"
+                android:layout_below="@+id/convert_to_"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="232dp"
+                android:background="@drawable/h_rectangle_4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/rectangle_5"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
+                app:layout_constraintVertical_bias="0.428"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/rectangle_5"
+                android:layout_width="113dp"
+                android:layout_height="125dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="468dp"
+                android:background="@drawable/h_rectangle_5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rectangle_2"
+                app:layout_constraintVertical_bias="0.425"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="230dp" />
+
+            <View
+                android:id="@+id/ellipse_1"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="269dp"
+                android:layout_marginTop="480dp"
+                android:background="@drawable/h_ellipse_1"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle_2"
+                app:layout_constraintHorizontal_bias="0.548"
+                app:layout_constraintStart_toStartOf="@+id/rectangle_2"
+                app:layout_constraintTop_toTopOf="@+id/rectangle_2"
+                app:layout_constraintVertical_bias="0.162" />
+
+            <View
+                android:id="@+id/ellipse_2"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="290dp"
+                android:layout_marginBottom="144dp"
+                android:background="@drawable/h_ellipse_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="92dp" />
+
+            <View
+                android:id="@+id/ellipse_3"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="94dp"
+                android:layout_marginTop="483dp"
+                android:background="@drawable/h_ellipse_3"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+                app:layout_constraintHorizontal_bias="0.451"
+                app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+                app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+                app:layout_constraintVertical_bias="0.283"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/ellipse_4"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="271dp"
+                android:layout_marginTop="286dp"
+                android:background="@drawable/h_ellipse_4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="263dp"
+                tools:layout_editor_absoluteY="445dp" />
+
+            <View
+                android:id="@+id/pdffkdm_1"
+                android:layout_width="25dp"
+                android:layout_height="29.65dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="284dp"
+                android:layout_marginTop="296dp"
+                android:background="@drawable/h_pdffkdm_1"
+                app:layout_constraintBottom_toBottomOf="@+id/ellipse_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.709"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/rectangle_2"
+                app:layout_constraintVertical_bias="0.666"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/doc1_1"
+                android:layout_width="30dp"
+                android:layout_height="32.47dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="491dp"
+                android:background="@drawable/h_doc1_1"
+                app:layout_constraintBottom_toBottomOf="@+id/ellipse_2"
+                app:layout_constraintEnd_toEndOf="@+id/ellipse_2"
+                app:layout_constraintStart_toStartOf="@+id/ellipse_2"
+                app:layout_constraintTop_toTopOf="@+id/ellipse_2"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/download_6_"
+                android:layout_width="30dp"
+                android:layout_height="28.89dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="492dp"
+                android:background="@drawable/h_download"
+                app:layout_constraintBottom_toBottomOf="@+id/ellipse_4"
+                app:layout_constraintEnd_toEndOf="@+id/ellipse_4"
+                app:layout_constraintStart_toStartOf="@+id/ellipse_4"
+                app:layout_constraintTop_toTopOf="@+id/ellipse_4"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/access_1"
+                android:layout_width="47dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/h_access_1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="284dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <View
+                android:id="@+id/convert_dar"
+                android:layout_width="35dp"
+                android:layout_height="36.03dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="103dp"
+                android:layout_marginTop="298dp"
+                android:background="@drawable/h_convert_dark_1"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+                app:layout_constraintEnd_toEndOf="@+id/ellipse_3"
+                app:layout_constraintHorizontal_bias="0.562"
+                app:layout_constraintStart_toStartOf="@+id/ellipse_3"
+                app:layout_constraintTop_toTopOf="@+id/ellipse_3"
+                app:layout_constraintVertical_bias="0.086"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/convert_to_"
+                android:layout_width="111dp"
+                android:layout_height="65dp"
+                android:layout_alignBottom="@+id/rectangle_1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="68dp"
+                android:layout_marginBottom="-1dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/convert_to_"
+                android:textAppearance="@style/convert_to_"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="263dp"
+                tools:layout_editor_absoluteY="74dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/open_pdf_fi"
+                android:layout_width="109dp"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="241dp"
+                android:layout_marginTop="341dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/open_pdf_fi"
+                android:textAppearance="@style/open_pdf_fi"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="590dp" />
+
+            <TextView
+                android:id="@+id/open_doc_fi"
+                android:layout_width="118dp"
+                android:layout_height="51dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="538dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/open_doc_fi"
+                android:textAppearance="@style/open_doc_fi"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="87dp"
+                tools:layout_editor_absoluteY="74dp" />
+
+            <TextView
+                android:id="@+id/open_epub_f"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="243dp"
+                android:layout_marginTop="532dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/open_epub_f"
+                android:textAppearance="@style/open_epub_f"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="154dp"
+                android:textStyle="bold"/>
+
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="51dp"
+                android:layout_height="39dp"
+                android:layout_alignBottom="@+id/toolbar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="348dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

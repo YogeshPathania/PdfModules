@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage"
+    android:id="@+id/drawerLayout"
+    android:background="@drawable/background_decent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_drawer"
+        android:layout_gravity="start"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-6dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+
+        <View
+            android:id="@+id/access_1"
+            android:layout_width="47dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/h_access_1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="284dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <!-- microphone 1 -->
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="51dp"
+            android:layout_height="39dp"
+            android:layout_alignBottom="@+id/toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="348dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            tools:ignore="UnknownIdInLayout,UseSwitchCompatOrMaterialXml" />
+
+
+        <View
+            android:id="@+id/microphone_"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="728dp"
+            android:layout_marginEnd="304dp"
+            android:background="@drawable/microphone" />
+
+        <View
+            android:id="@+id/plus_1"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="309dp"
+            android:layout_marginTop="728dp"
+            android:background="@drawable/add" />
+
+        <View
+            android:id="@+id/convert_dar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="729dp"
+            android:background="@drawable/convert" />
+
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

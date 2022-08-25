@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smartindiahackathon">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartIndiaHackathon"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.doc.DocPreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashBoardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dash_board"
+            android:theme="@style/Theme.SmartIndiaHackathon.NoActionBar" />
+        <activity
+            android:name=".SPLASHSCREEN"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OPEN_EPUB_FILE"
+            android:exported="false" />
+        <activity
+            android:name=".OPEN_DOC_FILE"
+            android:exported="false" />
+        <activity
+            android:name=".OPEN_PDF_FILE"
+            android:exported="false" />
+        <activity
+            android:name=".Convertor_Layout"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage"
+            android:exported="true" />
+        <activity
+            android:name=".login.emailLogin.LoginWithEmailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".login.ForgetpsswrdActivity"
+            android:exported="true" />
+        <activity
+            android:name=".login.emailLogin.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.epubReader.EpubReaderMainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SmartIndiaHackathon.NoActionBar" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.pdfReader.PdfTextToSpeechActivity"
+            android:exported="true"
+            android:mimeType="*/*" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.pdfReader.pdfdigitalsignature.Signature.FreeHandActivity"
+            android:label="Draw Signature"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".ui.pdfReader.pdfdigitalsignature.Signature.SignatureActivity"
+            android:label="Signatures"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".ui.pdfReader.pdfdigitalsignature.DigitalSignatureActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".ui.pdfReader.pdfdigitalsignature.PdfMainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+            <intent-filter android:scheme="http">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <activity android:name=".ui.pdfReader.PdfReaderNewActivity" />
+
+        <activity android:name=".ui.epubReader.FileChooser" />
+
+    </application>
+
+</manifest>

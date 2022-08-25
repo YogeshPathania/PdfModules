@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="convert_to_">Convert To EPUB File</style>
+
+    <style name="open_pdf_fi">Open PDF File</style>
+
+    <style name="open_doc_fi">Open DOC File</style>
+
+    <style name="open_epub_f">Open EPUB File</style>
+
+    <style name="pdf_to_epub">PDF To EPUB</style>
+
+    <style name="edit_file">Edit File</style>
+
+    <style name="tools">Tools</style>
+
+    <style name="speak_file">Speak File</style>
+</resources>

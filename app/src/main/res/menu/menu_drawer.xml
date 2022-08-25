@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Sign_Up"
+        android:title="@string/sign_up"
+        android:icon="@drawable/ic_sign_up"/>
+    <item
+        android:id="@+id/Login"
+        android:title="@string/login"
+        android:icon="@drawable/ic_login"/>
+    <item
+        android:id="@+id/Home_Page"
+        android:title="@string/home_page"
+        android:icon="@drawable/ic_home_page"/>
+    <item
+        android:id="@+id/Change_Language"
+        android:title="@string/change_language"
+        android:icon="@drawable/ic_change_language"/>
+    <item
+        android:id="@+id/Change_Theme"
+        android:title="@string/change_theme"
+        android:icon="@drawable/ic_change_theme"/>
+    <item
+        android:id="@+id/Starred_Files"
+        android:title="@string/starred_files"
+        android:icon="@drawable/ic_starred_files"/>
+    <item
+        android:id="@+id/Send_Feedback"
+        android:title="@string/send_feedback"
+        android:icon="@drawable/ic_send_feedback"/>
+    <item
+        android:id="@+id/About_Us"
+        android:title="@string/about_us"
+        android:icon="@drawable/ic_about_us"/>
+    <item
+        android:id="@+id/Help"
+        android:title="@string/help"
+        android:icon="@drawable/ic_help"/>
+
+
+</menu>
