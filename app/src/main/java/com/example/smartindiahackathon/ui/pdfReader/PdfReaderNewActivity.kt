@@ -171,7 +171,7 @@ class PdfReaderNewActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         }
 
         try {
-            selectPdfResult.launch("application/pdf")
+            selectPdfResult.launch("application/epub+zip")
         } catch (e: ActivityNotFoundException) {
             Toast.makeText(this, "No File Picker Found", Toast.LENGTH_SHORT).show()
             Log.e(TAG, "pickFile: ${e.message}")

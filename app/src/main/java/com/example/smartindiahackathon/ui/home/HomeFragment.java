@@ -100,6 +100,7 @@ public class HomeFragment extends Fragment {
     }
 
     public void OpenEpubManager() {
+
         Intent I = new Intent(requireContext(), FileChooser.class);
         startActivity(I);
 
